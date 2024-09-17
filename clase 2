@@ -1,0 +1,16 @@
+import numpy as np
+import random
+
+def generar_bosque(n):
+    bosque = np.zeros(n)
+    return bosque
+
+def cuantos (bosque, tipo_celda):
+    cantidad = 0
+    for i in range (len (bosque)):
+        if bosque[i] == tipo_celda:
+            cantidad += 1
+    return cantidad
+
+def suceso_aleatorio (x):
+    return random.randint (1,100) <= x
